@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data & models (large artifacts stay out of git)
+# data/raw ships in repo (public domain, small)
+# data/raw/*
+# data/processed ships in repo (needed for eval + Colab)
+# data/processed/*
+models/adapters/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/adapters/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
