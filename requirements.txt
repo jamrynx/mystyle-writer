@@ -1,0 +1,18 @@
+# Core ML (training runs on Colab; these pin the local/inference environment)
+transformers>=4.44.0
+peft>=0.12.0
+datasets>=2.20.0
+accelerate>=0.33.0
+bitsandbytes>=0.43.0 ; platform_system == "Linux"
+torch>=2.3.0
+
+# Data prep
+pandas>=2.2.0
+
+# App
+streamlit>=1.37.0
+
+# Evaluation
+sentence-transformers>=3.0.0
+scikit-learn>=1.5.0
+numpy>=1.26.0
