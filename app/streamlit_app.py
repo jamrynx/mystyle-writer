@@ -93,8 +93,8 @@ with st.sidebar:
         st.header("Evaluation")
         r = json.loads(RESULTS.read_text())
         emb = r["embedding_score"]
-        st.metric("Style score — fine-tuned", f"{emb['tuned_mean']:.4f}",
-                  delta=f"{emb['delta']:+.4f} vs base")
+        st.metric("Style score — fine-tuned", f"{emb['tuned']['mean']:.4f}",
+          delta=f"{r['delta_tuned_vs_base']:+.4f} vs base")
         st.caption("Cosine similarity to held-out Wilde centroid. Positive delta = model moved toward the target style.")
 
 
