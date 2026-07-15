@@ -1,0 +1,41 @@
+{
+  "embedding_score": {
+    "base": {
+      "mean": 0.4362199306488037,
+      "std": 0.04119785130023956
+    },
+    "tuned": {
+      "mean": 0.545692503452301,
+      "std": 0.02641957998275757
+    }
+  },
+  "delta_tuned_vs_base": 0.10947257280349731,
+  "lexical_profiles": {
+    "heldout_reference": {
+      "avg_sentence_len": 12.6,
+      "type_token_ratio": 0.206,
+      "semicolons_per_1k": 2.78,
+      "exclaims_per_1k": 6.01,
+      "dialogue_marks_per_1k": 35.08
+    },
+    "base": {
+      "avg_sentence_len": 20.2,
+      "type_token_ratio": 0.056,
+      "semicolons_per_1k": 0.0,
+      "exclaims_per_1k": 0.0,
+      "dialogue_marks_per_1k": 0.0
+    },
+    "tuned": {
+      "avg_sentence_len": 18.4,
+      "type_token_ratio": 0.058,
+      "semicolons_per_1k": 0.0,
+      "exclaims_per_1k": 4.51,
+      "dialogue_marks_per_1k": 9.03
+    }
+  },
+  "counts": {
+    "heldout": 33,
+    "base": 20,
+    "tuned": 20
+  }
+}
